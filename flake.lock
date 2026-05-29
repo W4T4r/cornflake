@@ -153,12 +153,47 @@
         "type": "github"
       }
     },
+    "nixpkgs_5": {
+      "locked": {
+        "lastModified": 1779560665,
+        "narHash": "sha256-tpyBcxPpcQb8ukyNF7DoCwfSY3VPsxHoYwj00Cayv5o=",
+        "owner": "NixOS",
+        "repo": "nixpkgs",
+        "rev": "64c08a7ca051951c8eae34e3e3cb1e202fe36786",
+        "type": "github"
+      },
+      "original": {
+        "owner": "NixOS",
+        "ref": "nixos-unstable",
+        "repo": "nixpkgs",
+        "type": "github"
+      }
+    },
     "root": {
       "inputs": {
         "bcompare5Flake": "bcompare5Flake",
         "catppuccinFcitx5": "catppuccinFcitx5",
         "catppuccinGtk": "catppuccinGtk",
-        "catppuccinKvantum": "catppuccinKvantum"
+        "catppuccinKvantum": "catppuccinKvantum",
+        "sddmTheme": "sddmTheme"
+      }
+    },
+    "sddmTheme": {
+      "inputs": {
+        "nixpkgs": "nixpkgs_5"
+      },
+      "locked": {
+        "lastModified": 1780066368,
+        "narHash": "sha256-XK3s6MF2Q9PtJC/1TaEhz595CYyniWM9btD2uvjm/W8=",
+        "owner": "W4T4r",
+        "repo": "sddm-theme",
+        "rev": "efef361152236550f63a5f94161a86131b5fb760",
+        "type": "github"
+      },
+      "original": {
+        "owner": "W4T4r",
+        "repo": "sddm-theme",
+        "type": "github"
       }
     }
   },

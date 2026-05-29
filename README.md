@@ -8,6 +8,7 @@ It provides one place to discover and consume:
 - [`catppuccin-fcitx5-flake`](https://github.com/W4T4r/catppuccin-fcitx5-flake)
 - [`catppuccin-gtk-flake`](https://github.com/W4T4r/catppuccin-gtk-flake)
 - [`catppuccin-kvantum-flake`](https://github.com/W4T4r/catppuccin-kvantum-flake)
+- [`sddm-theme`](https://github.com/W4T4r/sddm-theme)
 
 It is intended to be used alongside your own `nixpkgs` input rather than acting
 as a shared `nixpkgs` pin for every member flake.
@@ -24,6 +25,8 @@ member flakes:
 - `packages.<system>.catppuccin-fcitx5-rounded`
 - `packages.<system>.catppuccin-gtk`
 - `packages.<system>.catppuccin-kvantum`
+- `packages.<system>.sddm-theme`
+- `packages.<system>.sddm-theme-nixos-*`
 
 ### Apps
 
@@ -38,6 +41,7 @@ member flakes:
 - `homeManagerModules.default`
 - `nixosModules.catppuccin-fcitx5`
 - `nixosModules.catppuccin-kvantum`
+- `nixosModules.sddm-theme`
 - `nixosModules.default`
 
 ### Overlays
@@ -64,6 +68,7 @@ member flakes:
     inputs.cornflake.packages.${pkgs.system}.bcompare5
     inputs.cornflake.packages.${pkgs.system}.catppuccin-gtk
     inputs.cornflake.packages.${pkgs.system}.catppuccin-kvantum
+    inputs.cornflake.packages.${pkgs.system}.sddm-theme
   ];
 }
 ```
@@ -96,6 +101,15 @@ For NixOS:
   imports = [
     inputs.cornflake.nixosModules.default
   ];
+}
+```
+
+To enable the bundled SDDM theme module:
+
+```nix
+{
+  services.sddmTheme.enable = true;
+  services.sddmTheme.variant = "nixos-catppuccin-mocha";
 }
 ```
 
