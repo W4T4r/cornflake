@@ -183,11 +183,11 @@
         "nixpkgs": "nixpkgs_5"
       },
       "locked": {
-        "lastModified": 1780070956,
-        "narHash": "sha256-g+NAkX6gD9KCzT7OLIHRCr65XRZlcdnitQWvi/8oc44=",
+        "lastModified": 1780120677,
+        "narHash": "sha256-ZyT19gltVVOmqlEqHZZDfHlI6olioJ6+BfahRL/wqTs=",
         "owner": "W4T4r",
         "repo": "sddm-theme",
-        "rev": "039c93f750368bb508535053be9e6dc445b63d36",
+        "rev": "2b29f316c4ce83aed49574d31d57d75caf7b609a",
         "type": "github"
       },
       "original": {
